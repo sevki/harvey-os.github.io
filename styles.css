@@ -1,0 +1,740 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+}
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+h4 {
+  display: block;
+  font-size: 1em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  padding: 0px;
+}
+body {
+  margin: 0;
+}
+.post {
+  width: 100%;
+}
+.post-content img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.harvey-logo-image-phone {
+  margin-top: -15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.harvey-logo-image-drawer {
+  height: 140px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Disable ugly boxes around images in IE10 */
+a img {
+  border: 0px;
+}
+a {
+  color: #eb6864;
+}
+::-moz-selection {
+  background-color: #eb6864;
+  color: #fff;
+}
+
+::selection {
+  background-color: #eb6864;
+  color: #fff;
+}
+
+.harvey-search-box .mdl-textfield__input {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.harvey-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+.harvey-fab {
+  position: absolute;
+  right: 20%;
+  bottom: -26px;
+  z-index: 3;
+  background: #64ffda !important;
+  color: black !important;
+}
+
+.harvey-mobile-title {
+  display: none !important;
+}
+
+.harvey-logo-image {
+  height: 59px;
+  width: 189px;
+  margin-top: 4px;
+}
+
+.harvey-header {
+  overflow: visible;
+  background-color: #f0f0f0;
+}
+
+.harvey-header .material-icons {
+  color: #767777 !important;
+}
+
+.harvey-header .mdl-layout__drawer-button {
+  background: transparent;
+  color: #767777;
+}
+
+.harvey-header .mdl-navigation__link {
+  color: #757575;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.harvey-navigation-container {
+  /* Simple hack to make the overflow happen to the left instead... */
+  direction: rtl;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  width: 500px;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.harvey-navigation {
+  /* ... and now make sure the content is actually LTR */
+  direction: ltr;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 800px;
+}
+
+.harvey-search-box.is-focused + .harvey-navigation-container {
+  opacity: 0;
+  width: 100px;
+}
+
+.harvey-navigation .mdl-navigation__link {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  background-color: transparent !important;
+  border-bottom: 4px solid transparent;
+}
+
+.harvey-navigation .mdl-navigation__link:hover {
+  border-bottom: 4px solid #eb6864;
+}
+
+.harvey-search-box {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.harvey-more-button {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.harvey-drawer {
+  border-right: none;
+}
+
+.harvey-drawer-separator {
+  height: 1px;
+  background-color: #dcdcdc;
+  margin: 8px 0;
+}
+
+.harvey-drawer .mdl-navigation__link.mdl-navigation__link {
+  font-size: 14px;
+  color: #757575;
+}
+
+.harvey-drawer span.mdl-navigation__link.mdl-navigation__link {
+  color: #eb6864;
+}
+
+.harvey-drawer .mdl-layout-title {
+  position: relative;
+  background: #f0f0f0;
+  height: 160px;
+}
+
+.harvey-drawer .harvey-logo-image {
+  position: absolute;
+  bottom: 16px;
+}
+
+.harvey-be-together-section {
+  position: relative;
+  height: 800px;
+  width: auto;
+  background-color: #f3f3f3;
+  background: url('images/slide01.jpg') center 30% no-repeat;
+  background-size: cover;
+}
+
+.logo-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #767777;
+  font-weight: 500;
+}
+
+.harvey-slogan {
+  font-size: 60px;
+  padding-top: 160px;
+}
+
+.harvey-sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+}
+
+.harvey-create-character {
+  font-size: 21px;
+  padding-top: 400px;
+}
+
+.harvey-create-character a {
+  text-decoration: none;
+  color: #767777;
+  font-weight: 300;
+}
+
+.harvey-screen-section {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.harvey-screens {
+  text-align: right;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.harvey-screen {
+  text-align: center;
+}
+
+.harvey-screen .harvey-link {
+  margin-top: 16px;
+  display: block;
+  z-index: 2;
+}
+
+.harvey-image-link {
+  text-decoration: none;
+}
+
+.harvey-wear {
+  display: inline-block;
+  width: 160px;
+  margin-right: 32px;
+}
+
+.harvey-wear .harvey-screen-image {
+  width: 40%;
+  z-index: 1;
+}
+
+.harvey-phone {
+  display: inline-block;
+  width: 64px;
+  margin-right: 48px;
+}
+
+.harvey-phone .harvey-screen-image {
+  width: 100%;
+  z-index: 1;
+}
+
+.harvey-tablet {
+  display: inline-block;
+  width: 110px;
+  margin-right: 64px;
+}
+
+.harvey-tablet .harvey-screen-image {
+  width: 100%;
+  z-index: 1;
+}
+
+.harvey-tablet .harvey-link {
+  display: block;
+  z-index: 2;
+}
+
+.harvey-tv {
+  display: inline-block;
+  width: 300px;
+  margin-right: 80px;
+}
+
+.harvey-tv .harvey-screen-image {
+  width: 100%;
+  z-index: 1;
+}
+
+.harvey-auto {
+  display: inline-block;
+  width: 300px;
+  overflow: hidden;
+}
+
+.harvey-auto .harvey-screen-image {
+  display: block;
+  height: 300px;
+  z-index: 1;
+}
+
+.harvey-wear-section {
+  position: relative;
+  background: url('images/wear.png') center top no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.harvey-wear-band {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #37474f;
+}
+
+.harvey-wear-band-text {
+  max-width: 800px;
+  margin-left: 25%;
+  padding: 24px;
+  text-align: left;
+  color: white;
+}
+
+.harvey-wear-band-text p {
+  padding-top: 8px;
+}
+
+.harvey-link {
+  text-decoration: none;
+  color: #eb6864 !important;
+}
+
+.harvey-link:hover {
+  color: #eb6864 !important;
+}
+
+.harvey-link .material-icons {
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+}
+
+.harvey-alt-link {
+  text-decoration: none;
+  color: #64ffda !important;
+  font-size: 16px;
+}
+
+.harvey-alt-link:hover {
+  color: #00bfa5 !important;
+}
+
+.harvey-alt-link .material-icons {
+  position: relative;
+  top: 6px;
+}
+
+.harvey-getting-started-section {
+}
+
+.harvey-getting-started-section-text {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 16px 0 16px;
+}
+
+.harvey-getting-started-section-text p {
+  padding-top: 16px;
+}
+
+.harvey-getting-started-section-image {
+  background: url('images/devices.jpg') center top no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.harvey-more-section {
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.harvey-more-section .harvey-section-title {
+  margin-left: 12px;
+  padding-bottom: 24px;
+}
+
+.harvey-card-container {
+}
+
+.harvey-card-container .mdl-card__media {
+  overflow: hidden;
+  background: transparent;
+}
+
+.harvey-card-container .mdl-card__media img {
+  width: 100%;
+}
+
+.harvey-card-container .mdl-card__title {
+  background: transparent;
+  height: auto;
+}
+
+.harvey-card-container .mdl-card__title-text {
+  color: black;
+  height: auto;
+}
+
+.harvey-card-container .mdl-card__supporting-text {
+  height: auto;
+  color: black;
+  padding-bottom: 56px;
+}
+
+.harvey-card-container .mdl-card__actions {
+  position: absolute;
+  bottom: 0;
+}
+
+.harvey-card-container .mdl-card__actions a {
+  border-top: none;
+  font-size: 16px;
+}
+
+.harvey-footer {
+  background-color: #fafafa;
+  position: relative;
+}
+
+.harvey-footer a:hover {
+  color: #eb6864;
+}
+
+.harvey-footer .mdl-mega-footer--top-section::after {
+  border-bottom: none;
+}
+
+.harvey-footer .mdl-mega-footer--middle-section::after {
+  border-bottom: none;
+}
+
+.harvey-footer .mdl-mega-footer--bottom-section {
+  position: relative;
+}
+
+.harvey-footer .mdl-mega-footer--bottom-section a {
+  margin-right: 2em;
+}
+
+.harvey-footer .mdl-mega-footer--right-section a .material-icons {
+  position: relative;
+  top: 6px;
+}
+
+.harvey-link-menu:hover {
+  cursor: pointer;
+}
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .harvey-navigation-container {
+    display: none;
+  }
+
+  .harvey-title {
+    display: none !important;
+  }
+
+  .harvey-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+     consecutive "+" operators in some cases. Therefore, we need to use both
+     here to cover all the bases. */
+  .harvey.harvey-search-box.is-focused ~ .harvey-mobile-title,
+  .harvey-search-box.is-focused
+    + .harvey-navigation-container
+    + .harvey-mobile-title {
+    opacity: 0;
+  }
+
+  .harvey-more-button {
+    display: none;
+  }
+
+  .harvey-search-box.is-focused {
+    width: calc(100% - 48px);
+  }
+
+  .harvey-search-box .mdl-textfield__expandable-holder {
+    width: 100%;
+  }
+
+  .harvey-be-together-section {
+    height: 350px;
+  }
+
+  .harvey-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .harvey-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .harvey-create-character {
+    padding-top: 200px;
+    font-size: 16px;
+  }
+
+  .harvey-create-character img {
+    height: 12px;
+  }
+
+  .harvey-fab {
+    display: none;
+  }
+
+  .harvey-wear-band-text {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .harvey-footer .mdl-mega-footer--bottom-section {
+    display: none;
+  }
+}
+
+.manpage .manpage.p .manpage.b {
+  all: none;
+  animation: none;
+  animation-delay: 0;
+  animation-direction: normal;
+  animation-duration: 0;
+  animation-fill-mode: none;
+  animation-iteration-count: 1;
+  animation-name: none;
+  animation-play-state: running;
+  animation-timing-function: ease;
+  backface-visibility: visible;
+  background: 0;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-position-x: 0;
+  background-position-y: 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+  border: 0;
+  border-style: none;
+  border-width: medium;
+  border-color: inherit;
+  border-bottom: 0;
+  border-bottom-color: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-style: none;
+  border-bottom-width: medium;
+  border-collapse: separate;
+  border-image: none;
+  border-left: 0;
+  border-left-color: inherit;
+  border-left-style: none;
+  border-left-width: medium;
+  border-radius: 0;
+  border-right: 0;
+  border-right-color: inherit;
+  border-right-style: none;
+  border-right-width: medium;
+  border-spacing: 0;
+  border-top: 0;
+  border-top-color: inherit;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top-style: none;
+  border-top-width: medium;
+  bottom: auto;
+  box-shadow: none;
+  box-sizing: content-box;
+  caption-side: top;
+  clear: none;
+  clip: auto;
+  color: inherit;
+  columns: auto;
+  column-count: auto;
+  column-fill: balance;
+  column-gap: normal;
+  column-rule: medium none currentColor;
+  column-rule-color: currentColor;
+  column-rule-style: none;
+  column-rule-width: none;
+  column-span: 1;
+  column-width: auto;
+  content: normal;
+  counter-increment: none;
+  counter-reset: none;
+  cursor: auto;
+  direction: ltr;
+  display: inline;
+  empty-cells: show;
+  float: none;
+  font: normal;
+  font-family: inherit;
+  font-size: medium;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  height: auto;
+  hyphens: none;
+  left: auto;
+  letter-spacing: normal;
+  line-height: normal;
+  list-style: none;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: disc;
+  margin: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  max-height: none;
+  max-width: none;
+  min-height: 0;
+  min-width: 0;
+  opacity: 1;
+  orphans: 0;
+  outline: 0;
+  outline-color: invert;
+  outline-style: none;
+  outline-width: medium;
+  overflow: visible;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  page-break-after: auto;
+  page-break-before: auto;
+  page-break-inside: auto;
+  perspective: none;
+  perspective-origin: 50% 50%;
+  position: static;
+  /* May need to alter quotes for different locales (e.g fr) */
+  quotes: '\201C' '\201D' '\2018' '\2019';
+  right: auto;
+  tab-size: 8;
+  table-layout: auto;
+  text-align: inherit;
+  text-align-last: auto;
+  text-decoration: none;
+  text-decoration-color: inherit;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  top: auto;
+  transform: none;
+  transform-style: flat;
+  transition: none;
+  transition-delay: 0s;
+  transition-duration: 0s;
+  transition-property: none;
+  transition-timing-function: ease;
+  unicode-bidi: normal;
+  vertical-align: baseline;
+  visibility: visible;
+  white-space: normal;
+  widows: 0;
+  width: auto;
+  word-spacing: normal;
+  z-index: auto;
+}

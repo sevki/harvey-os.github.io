@@ -1,0 +1,41 @@
+{% assign default_paths = site.pages | map: "path" %}
+{% assign page_paths = site.header_pages | default: default_paths %}
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <div class="harvey-header mdl-layout__header mdl-layout__header--waterfall">
+    <div class="mdl-layout__header-row">
+      <span class="harvey-title mdl-layout-title">
+        <a href="/"><img class="harvey-logo-image" src="/images/harvey-os-logo-head.png"></a>
+      </span>
+      <!-- Add spacer, to align navigation to the right in desktop -->
+      <div class="harvey-header-spacer mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <div class="harvey-navigation-container">
+        <nav class="harvey-navigation mdl-navigation">
+          {% for path in page_paths %}
+            {% assign my_page = site.pages | where: "path", path | first %}
+            {% if my_page.title %}
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {% endif %}
+          {% endfor %}
+        </nav>
+      </div>
+      <span class="harvey-mobile-title mdl-layout-title">
+        <a href="/" >
+          <img class="harvey-logo-image-phone" src="/images/harvey-os-logo-head.png">
+        </a>
+      </span>
+    </div>
+  </div>
+<div class="harvey-drawer mdl-layout__drawer">
+<span class="mdl-layout-title">
+<img class="harvey-logo-image-drawer" src="/images/harvey-os-logo.png">
+</span>
+  <nav class="mdl-navigation">
+    {% for path in page_paths %}
+      {% assign my_page = site.pages | where: "path", path | first %}
+      {% if my_page.title %}
+      <a class="mdl-navigation__link"  href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+</div>

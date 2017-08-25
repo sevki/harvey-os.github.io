@@ -7,7 +7,9 @@ title: Home
 permalink: /
 ---
 
-## What is Harvey?
+<img style="float: right;" src="https://harvey-os.github.io/images/harvey-os-logo.svg" alt="harvey loves you!"/>
+
+## What is Harvey? 
 
 Harvey is an effort to provide a modern, distributed, 64 bit operating system. A different environment for researching and finding new lines of work. It can be built with <a href="https://gcc.gnu.org/">gcc</a> and <a href="http://clang.llvm.org/">clang</a> and has an [ANSI/POSIX compliant subsystem](https://github.com/Harvey-OS/apex/wiki).
 

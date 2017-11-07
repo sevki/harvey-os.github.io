@@ -35,12 +35,15 @@ reset. We can still boot harvey on the AMI BIOS nodes, but only from a USB stick
 We'll be reflashing these too.
 
 [![mini cluster](/images/usenix2015/thumb-mini-cluster.jpg)](/images/usenix2015/mini-cluster.jpg)
+
 Harvey mini-cluster ready to fire up (or catch fire)
 
 [![boffins to blame](/images/usenix2015/thumb-boffins-to-blame.jpg)](/images/usenix2015/boffins-to-blame.jpg)
+
 John on the floor, trying to make the minnowmax boot
 Harvey, Aki on the chair making Harvey build on a mac and boot off of one.
 
 [![video of error](/images/usenix2015/thumb-video-of-error.jpg)](/images/usenix2015/video-of-error.jpg)
+
 John decided taking a video of the boot sequence would
 be the best way to capture the sub-second error message.

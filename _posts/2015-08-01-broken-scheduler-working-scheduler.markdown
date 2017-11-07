@@ -15,7 +15,7 @@ Obviously, it can't all be happy days: resident guru Aki Nyrhinen has just prove
 
 Undeterred by the mess, and in a question of hours, the fire has been put out:
 
-* Alright, after 4 hours of furious editing and undoing damage to the boot code, I've got harvey booting up with the ndnr() in squidboy commented out.
+ Alright, after 4 hours of furious editing and undoing damage to the boot code, I've got harvey booting up with the ndnr() in squidboy commented out.
 
 Some (thorough?) measurements after the fix:
 

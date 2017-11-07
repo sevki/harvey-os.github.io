@@ -16,7 +16,7 @@ a release could just become obsolete overnight.
 
 ## Help us supporting Harvey OS
 
-You can make a [donation](donate) for helping Harvey.
+You can make a [donation](/donate) for helping Harvey.
 
 [![Build Status](https://travis-ci.org/Harvey-OS/harvey.svg?branch=master)](https://travis-ci.org/Harvey-OS/harvey)
 [![Coverity Badge](https://scan.coverity.com/projects/5328/badge.svg)](https://scan.coverity.com/projects/5328)

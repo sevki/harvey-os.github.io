@@ -9,7 +9,8 @@ permalink: /
 
 <img style="margin-left:10px; float: right;" src="/images/harvey-os-logo.svg" alt="harvey loves you!"/>
 
-# Harvey OS ~ A distributed operating system
+# Harvey OS
+### A distributed operating system
 
 ## What is Harvey?
 

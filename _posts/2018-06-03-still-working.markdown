@@ -4,7 +4,6 @@ title: "Still here and working"
 date: "2018-06-03 11:00:41 +0200"
 ---
 
-.
 It's been a while since the last time we posted anything in our website. But does not means we abandoned the project, we were working silently trying to improve Harvey along all this time.
 All you know the big problem with opensource projects: free time for doing it. And our team is not an exception. We dedicate to Harvey all the time we can, and due to lack of free time, stretching targets by priority for not wasting that precious time we spend in it.
 

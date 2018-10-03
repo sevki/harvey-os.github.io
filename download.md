@@ -12,7 +12,7 @@ could change from time to time. Be sure of having the latest updates from reposi
 - Source code is available through [github](https://github.com/Harvey-OS/harvey).
 - Instructions for building and running it [here](https://github.com/Harvey-OS/harvey/wiki/Getting-Started).
 - Follow the steps properly for your platform and read the rest of the doc in wiki about how to send a patch for helping us.
-- Also we have a list of [work in progress projects](https://github.com/Harvey-OS/harvey/wiki/Projects--(who-is-doing-what)) to have an idea about in what we are working.But it does not exhaust all the works that people could be doing in it, just the main lines.
+- Also we have a list of [work in progress projects](https://github.com/Harvey-OS/harvey/wiki/Projects--(who-is-doing-what)) to have an idea about in what we are working. But it does not exhaust all the works that people could be doing in it, just the main lines.
 
 ## Help us supporting Harvey OS
 

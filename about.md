@@ -9,10 +9,9 @@ permalink: /about/
 
 - AMD 64 bit
 - Modern, simplified syscall system
-- GCC toolchain means you can use gdb(!)
+- GCC toolchain means you can use GDB(!)
 - Clang and Intel C Compiler compatible
-- Compile in Linux or OSX using Harvey's headers and libs, no need to change anything else
-- Fast compilation of the whole system
+- Compile in Linux, Windows, FreeBSD or OSX using Harvey's headers and libs, no need to change anything else
 - A large set of userland apps available
 - Plans to add a new GUI, a new fileserver, native toolchains and more
 - Go programming language port <a href="https://github.com/Harvey-OS/harvey/wiki/Go-on-Harvey">available</a>.

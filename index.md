@@ -25,8 +25,8 @@ Harvey is a member of [Software Freedom Conservancy](https://github.com/Harvey-O
 
 Help Harvey by making a [donation](donate)!
 
-![Conservancy helps make our work possible.
-   Please donate to them today to support community-driven free software projects!(https://sfconservancy.org/supporter)](https://sfconservancy.org/img/banners/2018-project.jpg "Go to sfconservancy.org")
+[![Conservancy helps make our work possible.
+   Please donate to them today to support community-driven free software projects!](https://sfconservancy.org/supporter)](https://sfconservancy.org/img/banners/2018-project.jpg =50x "Go to sfconservancy.org")
 -----
 
 ## Getting Started

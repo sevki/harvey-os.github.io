@@ -23,8 +23,14 @@ Harvey is open source, and it is distributed under [GPL](http://www.gnu.org/lice
 -----
 Harvey is a member of [Software Freedom Conservancy](https://github.com/Harvey-OS/harvey/wiki/Conservancy)
 
-Help Harvey by making a [donation](donate)!
+<a href="https://sfconservancy.org/supporter">
+  <img style="width: 100%;"
+       src="https://sfconservancy.org/img/banners/2018-project.jpg"
+       alt="Conservancy helps make our work possible.
+            Please donate to them today to support community-driven free software projects!"
+</a>
 
+Help Harvey by making a [donation](donate)!
 -----
 
 ## Getting Started

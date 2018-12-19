@@ -25,7 +25,7 @@ Harvey is a member of [Software Freedom Conservancy](https://github.com/Harvey-O
 
 Help Harvey by making a [donation](donate)!
 
-[![sfconservancy](https://sfconservancy.org/supporter)](https://sfconservancy.org/img/banners/2018-project.jpg =70x)
+[![sfconservancy](https://sfconservancy.org/supporter)](https://sfconservancy.org/img/banners/2018-project.jpg){:height="56px" width="36px"}
 
 -----
 

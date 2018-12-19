@@ -738,3 +738,5 @@ a {
   word-spacing: normal;
   z-index: auto;
 }
+
+img[alt=sfconservancy] { width: 70px; }

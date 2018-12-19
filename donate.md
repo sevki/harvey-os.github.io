@@ -7,6 +7,9 @@ permalink: /donate/
 ## Harvey and Software Freedom Conservancy
 Harvey is a member project of [Software Freedom Conservancy](https://github.com/Harvey-OS/harvey/wiki/Conservancy). Conservancy is a not-for-profit organization that provides financial and administrative assistance to open source projects.
 
+[![Conservancy is a proponent for community driven free software projects.
+                Will you join me in supporting them? Donate today!](/images/sfc-2018-project.jpg)](https://sfconservancy.org/supporter)
+
 ## Donation
 Conservancy accepts donations on Harvey's behalf. Project money will typically go to defraying travel costs for developers to come to our meetings and hardware for development and experimentation. A portion of the money goes to Conservancy to cover their operating expenses. You can also donate [directly](https://sfconservancy.org/donate) to Software Freedom Conservancy's general fund.
 

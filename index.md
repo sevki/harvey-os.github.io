@@ -7,7 +7,7 @@ title: Home
 permalink: /
 ---
 
-<img style="margin-left:10px; float: right;" src="/images/harvey-os-logo.svg" alt="harvey loves you!"/>
+<img style="margin-left:10px; float: right;" src="/images/harvey-os-christmas.svg" alt="harvey loves you!"/>
 
 # Harvey OS
 ### A distributed operating system
